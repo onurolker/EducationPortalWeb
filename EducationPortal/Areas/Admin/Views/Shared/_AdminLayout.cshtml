@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/js/site.js"></script>
+
+    @RenderSection("customStyles", required: false)
+</head>
+<body class="container-fluid">
+    <div >
+    <partial name="_AdminPanel" /></div>
+<div class="container col-lg-6 col-xl-8 col-md-4 col-sm-12 mt-2 p-5">
+    @RenderBody()
+    
+ 
+</div>
+     
+
+    @*<partial name="_CookieConsentPartial" />*@
+    @RenderSection("customScripts", required: false)
+</body>
+</html>

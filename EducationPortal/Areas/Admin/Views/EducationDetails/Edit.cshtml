@@ -1,0 +1,52 @@
+﻿@model EducationPortal.Models.EducationDetailsViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Edit</h1>
+
+<h4>EducationDetailsViewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="EducationDetailFilePath" class="control-label"></label>
+                <input asp-for="EducationDetailFilePath" class="form-control" />
+                <span asp-validation-for="EducationDetailFilePath" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EducationDetailDailyPrice" class="control-label"></label>
+                <input asp-for="EducationDetailDailyPrice" class="form-control" />
+                <span asp-validation-for="EducationDetailDailyPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EducationDetailQuota" class="control-label"></label>
+                <input asp-for="EducationDetailQuota" class="form-control" />
+                <span asp-validation-for="EducationDetailQuota" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EducationDetailTotalTime" class="control-label"></label>
+                <input asp-for="EducationDetailTotalTime" class="form-control" />
+                <span asp-validation-for="EducationDetailTotalTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EducationViewModelId" class="control-label"></label>
+                <select asp-for="EducationViewModelId" class="form-control" asp-items="ViewBag.EducationViewModelId"></select>
+                <span asp-validation-for="EducationViewModelId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
