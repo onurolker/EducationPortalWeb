@@ -5,7 +5,7 @@
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h1>Index</h1>
+<h1>Eğitim Bilgileri</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -16,9 +16,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.EducationName)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.EducationCategoriesViewModel)
-            </th>
+            
             <th></th>
         </tr>
     </thead>
@@ -29,11 +27,8 @@
                 @Html.DisplayFor(modelItem => item.EducationName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.EducationCategoriesViewModel.CategoryName)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                @*<a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |*@
+                @*<a asp-action="Details" asp-route-id="@item.Id">Details</a> |*@
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>

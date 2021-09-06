@@ -27,6 +27,7 @@ namespace EducationPortal.Models
         public IEnumerable<EducationUsersAndEducation> EducationUsersAndEducation { get; set; }
 
         public EducationCategoriesViewModel EducationCategoriesViewModel { get; set; }
+        [Display(Name = "Kategori")]
         public int EducationCategoriesViewModelId { get; set; }
     }
 }

@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 
 namespace EducationPortal.Areas.Admin.Controllers
 {
+    [Area("Admin"), Route("Admin/[controller]")]
     public class EducationDetailsController : Controller
     {
         // GET: EducationDetailsController
+        [HttpGet, Route("[action]")]
         public ActionResult Index()
         {
             return View();
@@ -22,6 +24,7 @@ namespace EducationPortal.Areas.Admin.Controllers
         }
 
         // GET: EducationDetailsController/Create
+
         public ActionResult Create()
         {
             return View();
