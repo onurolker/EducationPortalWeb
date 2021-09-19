@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EducationPortal", "EducationPortal\EducationPortal.csproj", "{8BCF40C6-7993-4D4D-AA18-7FD1D6DB8E02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EducationPortal", "EducationPortal\EducationPortal.csproj", "{8BCF40C6-7993-4D4D-AA18-7FD1D6DB8E02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EducationPortal.Entities", "EducationPortal.Entities\EducationPortal.Entities.csproj", "{993E3997-92BA-401A-A324-AA5DFD4D9500}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EducationPortal.DataAccess", "EducationPortal.DataAccess\EducationPortal.DataAccess.csproj", "{BB953606-E581-486E-914E-7D5404398FCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{8BCF40C6-7993-4D4D-AA18-7FD1D6DB8E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BCF40C6-7993-4D4D-AA18-7FD1D6DB8E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BCF40C6-7993-4D4D-AA18-7FD1D6DB8E02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{993E3997-92BA-401A-A324-AA5DFD4D9500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{993E3997-92BA-401A-A324-AA5DFD4D9500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{993E3997-92BA-401A-A324-AA5DFD4D9500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{993E3997-92BA-401A-A324-AA5DFD4D9500}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB953606-E581-486E-914E-7D5404398FCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB953606-E581-486E-914E-7D5404398FCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB953606-E581-486E-914E-7D5404398FCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB953606-E581-486E-914E-7D5404398FCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
